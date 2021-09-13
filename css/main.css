@@ -111,8 +111,6 @@ div {
 	text-decoration: none;
 }
 
-/*
-
 .content_nav p:before {
 	content: '';
 	display: inline-block;
@@ -134,22 +132,20 @@ div {
 	height: 7px;
 	margin: 0px 15px 0px 0px;
 	border-radius: 50%;
-
 	background-color: #f20f20;
 }
-
 
 .content_contacts {
 	width: 100px;
 	margin: 0 auto;
 	padding-bottom: 5px;
-}
-
-.content_contacts {
 	font-size: 10px;
 	color: #e0e0e0;
 }
 
+.content_contacts p {
+	text-align: center;
+}
 
 .hr{
 	width: 1000px;
