@@ -3,27 +3,24 @@ body{
 	background-color: #080808;
 }
 
+div {
+}
+
 .content {
-	min-width: 1880px;
-	width: 99.2%;
+	width: 100%;
 	height: 99%;
 	margin: 0 auto;
 	padding: 100px 0px 0px 0px;
 	z-index: 999;
 	position: absolute;
 	min-height: 2000px;
-
 	border: 1px solid #080808;
-
 	background: rgba(21, 21, 21, 0.7);
+	overflow: hidden;
 }
 
 .content_main {
-	height: 100px;
-	margin: 0px 0px 200px 0px;
-	padding: 0px 20px;
-
-
+	padding: 0px 20px 20px;
 }
 
 .content_main h1{
@@ -41,9 +38,8 @@ body{
 }
 
 .content_main p{
-	width: 1100px;
+	max-width: 1000px;
 	margin: 0 auto;
-
 	font-size: 15px;
 	text-align: justify;
 	color: #e0e0e0;
@@ -63,9 +59,9 @@ body{
 }
 
 .content_solar-system{
-	width: 1000px;
+	max-width: 1880px;
 	margin: 0 auto;
-	padding: 200px 0px 0px 0px;
+	padding: 20px 20px 0px;
 }
 
 .content_solar-system h3{
@@ -79,9 +75,8 @@ body{
 }
 
 .content_solar-system p{
-	width: 900px;
+	max-width: 900px;
 	margin: 0px auto 30px auto;
-
 	font-size: 15px;
 	text-align: justify;
 	color: #e0e0e0;
@@ -89,18 +84,20 @@ body{
 
 .content_solar-system img{
 	display: block;
-	width: 600px;
+	max-width: 600px;
+	width: 100%;
 	margin: 0 auto;
-	padding: 50px; 
+	padding: 50px 0px;
 }
 
 .content_nav {
-	width: 600px;
+	max-width: 600px;
 	margin: 0px auto 300px auto;
 }
 
 .content_nav h3{
-	width: 400px;
+	max-width: 400px;
+	width: 100%;
 }
 
 .content_nav p{
@@ -124,8 +121,6 @@ body{
 	margin: 0px 15px 0px 0px;
 	border-radius: 50%;
 }
-
-*/
 
 .content_nav p:hover {
 	color: #efefef;
@@ -171,9 +166,12 @@ body{
 .stars, .twinkling, .clouds {
 	position:absolute;
 	display:block;
-	top:0; bottom:0;
-	left:0; right:0;
-	min-width:1880px; width:100%; height:500px;
+	top:0;
+	left: 50%;
+	transform: translateX(-50%);
+	width:100%;
+	height: 450px;
+	overflow: hidden;
 }
 
 .stars {
